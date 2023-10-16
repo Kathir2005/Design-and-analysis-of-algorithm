@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+	
+	int arr[] = { 1,2,3,4,5,6,7,8,9};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	
+	int maxvalue = arr[0];
+	
+	for(int i = 1;i < n;i++){
+		if(arr[i] > maxvalue){
+			maxvalue = arr[i];
+		}
+	}
+	printf("maximum value: %d\n",maxvalue);
+	
+	return 0;
+}
